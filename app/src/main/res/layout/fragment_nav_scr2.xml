@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.hilt_jetpack.viewModel.NavViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.NavScr2Fragment"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:gravity="center">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvScr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={viewModel.scr2Data}"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_work" />
+
+    </LinearLayout>
+</layout>
